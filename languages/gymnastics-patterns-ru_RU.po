@@ -1,0 +1,302 @@
+# Russian translation for Gymnastics Pattern Generator plugin.
+# Copyright (C) 2025
+# This file is distributed under the same license as the plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Gymnastics Pattern Generator 1.0.0\n"
+"Report-Msgid-Bugs-To: https://example.com\n"
+"POT-Creation-Date: 2025-01-15 12:00+0300\n"
+"PO-Revision-Date: 2025-01-15 12:00+0300\n"
+"Last-Translator: Your Name <email@example.com>\n"
+"Language-Team: Russian\n"
+"Language: ru_RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Poedit 3.0\n"
+
+#: gymnastics-patterns.php:45
+msgid "Gymnastics Pattern Generator"
+msgstr "Генератор выкроек для гимнастики"
+
+#: includes/class-activator.php:35
+msgid "Patterns"
+msgstr "Выкройки"
+
+#: includes/class-activator.php:45
+msgid "Settings"
+msgstr "Настройки"
+
+#: includes/class-shortcodes.php:18
+msgid "Please log in to create a pattern."
+msgstr "Пожалуйста, войдите, чтобы создать выкройку."
+
+#: includes/class-shortcodes.php:26
+msgid "Please log in to view your patterns."
+msgstr "Пожалуйста, войдите, чтобы просмотреть свои выкройки."
+
+#: includes/class-ajax-handler.php:25
+msgid "Invalid nonce"
+msgstr "Недействительный токен безопасности"
+
+#: includes/class-ajax-handler.php:28
+msgid "Not authorized"
+msgstr "Не авторизован"
+
+#: includes/class-pdf-generator.php:35
+msgid "Pattern for %s"
+msgstr "Выкройка для %s"
+
+#: includes/class-pdf-generator.php:35
+msgid "Gymnast"
+msgstr "Гимнастка"
+
+#: includes/class-pdf-generator.php:55
+msgid "Too many pages required."
+msgstr "Требуется слишком много страниц."
+
+#: templates/pattern-form.php:10
+msgid "Gymnast Information"
+msgstr "Информация о гимнастке"
+
+#: templates/pattern-form.php:12
+msgid "Gymnast Name"
+msgstr "Имя гимнастки"
+
+#: templates/pattern-form.php:13
+msgid "Age"
+msgstr "Возраст"
+
+#: templates/pattern-form.php:16
+msgid "Measurements (cm)"
+msgstr "Мерки (см)"
+
+#: templates/pattern-form.php:19
+msgid "Height"
+msgstr "Рост"
+
+#: templates/pattern-form.php:20
+msgid "Bust"
+msgstr "Обхват груди"
+
+#: templates/pattern-form.php:21
+msgid "Under Bust"
+msgstr "Обхват под грудью"
+
+#: templates/pattern-form.php:22
+msgid "Waist"
+msgstr "Обхват талии"
+
+#: templates/pattern-form.php:23
+msgid "Hips"
+msgstr "Обхват бёдер"
+
+#: templates/pattern-form.php:24
+msgid "Chest Width"
+msgstr "Ширина груди"
+
+#: templates/pattern-form.php:25
+msgid "Back Width"
+msgstr "Ширина спины"
+
+#: templates/pattern-form.php:26
+msgid "Front Waist Length"
+msgstr "Длина переда до талии"
+
+#: templates/pattern-form.php:27
+msgid "Back Waist Length"
+msgstr "Длина спины до талии"
+
+#: templates/pattern-form.php:28
+msgid "Bust Height"
+msgstr "Высота груди"
+
+#: templates/pattern-form.php:29
+msgid "Bust Distance"
+msgstr "Расстояние между центрами груди"
+
+#: templates/pattern-form.php:30
+msgid "Armhole Depth"
+msgstr "Глубина проймы"
+
+#: templates/pattern-form.php:31
+msgid "Arm Circumference"
+msgstr "Обхват плеча"
+
+#: templates/pattern-form.php:32
+msgid "Shoulder Length"
+msgstr "Длина плеча"
+
+#: templates/pattern-form.php:33
+msgid "Sleeve Length"
+msgstr "Длина рукава"
+
+#: templates/pattern-form.php:34
+msgid "Wrist Circumference"
+msgstr "Обхват запястья"
+
+#: templates/pattern-form.php:35
+msgid "Seat Height"
+msgstr "Высота сидения"
+
+#: templates/pattern-form.php:36
+msgid "Side Length (waist to crotch)"
+msgstr "Длина боковая (от талии до низа трусов)"
+
+#: templates/pattern-form.php:37
+msgid "Leg Circumference"
+msgstr "Обхват ноги у паха"
+
+#: templates/pattern-form.php:38
+msgid "Step Width"
+msgstr "Ширина шага"
+
+#: templates/pattern-form.php:39
+msgid "Leotard Length"
+msgstr "Длина купальника"
+
+#: templates/pattern-form.php:40
+msgid "Neck Circumference"
+msgstr "Обхват шеи"
+
+#: templates/pattern-form.php:41
+msgid "Front Neck Width"
+msgstr "Ширина горловины спереди"
+
+#: templates/pattern-form.php:42
+msgid "Front Neck Depth"
+msgstr "Глубина горловины спереди"
+
+#: templates/pattern-form.php:43
+msgid "Back Neck Width"
+msgstr "Ширина горловины сзади"
+
+#: templates/pattern-form.php:44
+msgid "Back Neck Depth"
+msgstr "Глубина горловины сзади"
+
+#: templates/pattern-form.php:45
+msgid "Side Seam Length"
+msgstr "Длина бокового шва"
+
+#: templates/pattern-form.php:46
+msgid "Front Waist Circumference"
+msgstr "Обхват талии спереди"
+
+#: templates/pattern-form.php:47
+msgid "Back Waist Circumference"
+msgstr "Обхват талии сзади"
+
+#: templates/pattern-form.php:48
+msgid "Bust Fullness"
+msgstr "Полнота груди"
+
+#: templates/pattern-form.php:52
+msgid "Skirt Options"
+msgstr "Параметры юбки"
+
+#: templates/pattern-form.php:53
+msgid "Add Skirt"
+msgstr "Добавить юбку"
+
+#: templates/pattern-form.php:55
+msgid "Skirt Type"
+msgstr "Тип юбки"
+
+#: templates/pattern-form.php:57
+msgid "Straight"
+msgstr "Прямая"
+
+#: templates/pattern-form.php:58
+msgid "Full Circle"
+msgstr "Солнце"
+
+#: templates/pattern-form.php:59
+msgid "Half Circle"
+msgstr "Полусолнце"
+
+#: templates/pattern-form.php:60
+msgid "Gathered"
+msgstr "Со сборкой"
+
+#: templates/pattern-form.php:61
+msgid "Tiered"
+msgstr "С воланами"
+
+#: templates/pattern-form.php:64
+msgid "Skirt Length"
+msgstr "Длина юбки"
+
+#: templates/pattern-form.php:68
+msgid "Generate Pattern"
+msgstr "Сгенерировать выкройку"
+
+#: templates/pattern-form.php:69
+msgid "Save Parameters"
+msgstr "Сохранить параметры"
+
+#: templates/my-patterns.php:8
+msgid "My Patterns"
+msgstr "Мои выкройки"
+
+#: templates/my-patterns.php:9
+msgid "Search..."
+msgstr "Поиск..."
+
+#: templates/my-patterns.php:12
+msgid "Name"
+msgstr "Название"
+
+#: templates/my-patterns.php:12
+msgid "Gymnast"
+msgstr "Гимнастка"
+
+#: templates/my-patterns.php:12
+msgid "Date"
+msgstr "Дата"
+
+#: templates/my-patterns.php:12
+msgid "Actions"
+msgstr "Действия"
+
+#: templates/my-patterns.php:20
+msgid "Download"
+msgstr "Скачать"
+
+#: templates/my-patterns.php:21
+msgid "Edit"
+msgstr "Редактировать"
+
+#: templates/my-patterns.php:22
+msgid "Delete"
+msgstr "Удалить"
+
+#: includes/class-admin.php:45
+msgid "Pattern Generator Settings"
+msgstr "Настройки генератора выкроек"
+
+#: includes/class-admin.php:49
+msgid "Enable WooCommerce Integration"
+msgstr "Включить интеграцию с WooCommerce"
+
+#: includes/class-admin.php:53
+msgid "Maximum A4 pages"
+msgstr "Максимальное количество листов A4"
+
+#: includes/class-admin.php:59
+msgid "Settings saved."
+msgstr "Настройки сохранены."
+
+#: includes/class-database.php:95
+msgid "Error generating pattern."
+msgstr "Ошибка генерации выкройки."
+
+#: includes/class-integration-woo.php:25
+msgid "Pattern Generation Access"
+msgstr "Доступ к генерации выкроек"
+
+#: includes/class-integration-woo.php:26
+msgid "Digital access to generate custom gymnastics patterns."
+msgstr "Цифровой доступ для генерации индивидуальных выкроек для гимнастики."
