@@ -1,0 +1,512 @@
+/**
+ * Gymnastics Pattern Generator - Frontend Styles
+ * Version: 1.0.0
+ */
+
+/* CSS Variables for easy customization */
+:root {
+    --gympat-primary: #2c3e50;
+    --gympat-secondary: #3498db;
+    --gympat-accent: #e74c3c;
+    --gympat-border: #ddd;
+    --gympat-bg-light: #f9f9f9;
+    --gympat-text: #333;
+    --gympat-text-light: #666;
+    --gympat-success: #27ae60;
+    --gympat-error: #c0392b;
+    --gympat-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    --gympat-border-radius: 6px;
+    --gympat-box-shadow: 0 5px 10px rgba(0,0,0,0.05);
+    --gympat-transition: all 0.2s ease;
+}
+
+.a:active,
+.a:hover{
+  text-decoration: none;
+  color: #fff;
+}
+ 
+.a {
+  text-decoration: none;
+}
+
+.bt {
+	display: inline-block;	
+	border: 1px solid #fff; 
+	border-radius: 6px;
+	padding-top: 0.3em;
+	height: 40px;
+        width: 100px;
+	top: 4em;
+	left: 2em;
+	font-size: 1em;
+	font-weight: 600;
+	text-decoration: none;
+        text-align: center;
+	vertical-align: middle;
+	color: #333;
+	background-color: #2aaed5;
+	cursor: pointer;
+        z-index: 99999;
+ 	position: fixed;  
+}
+
+.bt:hover {
+        color: #fff;
+}
+
+.btnew {
+        display: inline-block;  
+        border: 1px solid #fff; 
+        border-radius: 6px;
+        padding-top: 0.3em;
+        height: 40px;
+        width: 300px;
+	top: 3em;
+	right: 2em;
+        font-size: 1em;
+        font-weight: 600;
+        text-decoration: none;
+        text-align: center;
+        vertical-align: middle;
+        color: #333;
+        background-color: #2aaed5;
+        cursor: pointer;
+        z-index: 99999;
+        position: fixed;  
+}
+
+.btnew:hover {
+        color: #fff;
+}
+
+
+/*container */
+.gympat-form-container,
+.gympat-my-patterns {
+    font-family: var(--gympat-font-family);
+    color: var(--gympat-text);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: transparent;
+    border-radius: 8px;
+    box-shadow: var(--gympat-box-shadow);
+    box-sizing: border-box;
+}
+
+/* Headings */
+.gympat-form-container h2,
+.gympat-my-patterns h2 {
+    color: #ffffff;
+    font-size: 2em;
+    text-align: center;
+    margin: 1.5em 0 1em;
+    padding-bottom: 0.5em;
+    border-bottom: 2px solid var(--gympat-border);
+}
+
+.gympat-form-container h2:first-of-type {
+    margin-top: 0;
+}
+
+.legend {
+    font-size: 3em;
+    text-align: center;
+}
+
+/* Form rows and grids */
+.gympat-row {
+    display: block;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.gympat-row > * {
+    flex: 1 1 200px;
+}
+
+/* Grid for measurements (3 columns on desktop) */
+.gympat-grid-3 {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 15px 20px;
+    margin-bottom: 20px;
+}
+
+/* Labels and inputs */
+.gympat-form-container label,
+.gympat-my-patterns label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #FFF;
+    font-size: 1em;
+}
+
+.gympat-form-container input[type="text"],
+.gympat-form-container input[type="number"],
+.gympat-form-container select,
+.gympat-form-container textarea {
+    width: 100%;
+    padding: 8px 12px;
+    border: 3px solid var(--gympat-border);
+    border-radius: var(--gympat-border-radius);
+    font-size: 1em;
+    transition: var(--gympat-transition);
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.gympat-form-container input:focus,
+.gympat-form-container select:focus,
+.gympat-form-container textarea:focus {
+    outline: none;
+    border-color: var(--gympat-secondary);
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.gympat-form-container input:invalid {
+    border-color: var(--gympat-error);
+}
+
+/* Checkbox styling */
+.gympat-form-container input[type="checkbox"] {
+    margin-right: 8px;
+    transform: scale(1.2);
+    vertical-align: middle;
+}
+
+/* Skirt options section */
+#gympat-skirt-options {
+    margin-top: 20px;
+    padding: 20px;
+    background: transparent;
+    border-radius: var(--gympat-border-radius);
+    border-left: 4px solid var(--gympat-secondary);
+    transition: var(--gympat-transition);
+}
+
+/* Buttons */
+.gympat-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+    margin: 30px 0 20px;
+}
+
+.gympat-actions button,
+.gympat-actions .button,
+.gympat-my-patterns .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: var(--gympat-secondary);
+    color: #fff;
+    border: none;
+    border-radius: var(--gympat-border-radius);
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    transition: var(--gympat-transition);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    border: 1px solid transparent;
+}
+
+.gympat-actions button:hover,
+.gympat-actions .button:hover {
+    background: #2980b9;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.gympat-actions .button-primary {
+    background: var(--gympat-primary);
+}
+
+.gympat-actions .button-primary:hover {
+    background: #1a252f;
+}
+
+.gympat-actions #gympat-save {
+    background: var(--gympat-success);
+}
+
+.gympat-actions #gympat-save:hover {
+    background: #219a52;
+}
+
+.gympat-my-patterns .gympat-delete {
+    background: var(--gympat-error);
+    color: #fff;
+}
+
+.gympat-my-patterns .gympat-delete:hover {
+    background: #a82315;
+}
+
+/* Progress bar */
+#gympat-progress {
+    margin: 20px 0;
+    min-height: 30px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 20px;
+    background: var(--gympat-bg-light);
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress-bar::after {
+    content: '';
+    display: block;
+    width: 30%;
+    height: 100%;
+    background: var(--gympat-secondary);
+    animation: gympat-progress-animation 1.5s infinite ease-in-out;
+    border-radius: 10px;
+}
+
+@keyframes gympat-progress-animation {
+    0% { width: 0%; margin-left: 0%; }
+    50% { width: 50%; margin-left: 25%; }
+    100% { width: 0%; margin-left: 100%; }
+}
+
+/* PDF link */
+#gympat-pdf-link {
+    margin: 20px 0;
+}
+
+#gympat-pdf-link a {
+    display: inline-block;
+    padding: 12px 25px;
+    background: var(--gympat-primary);
+    color: #fff;
+    text-decoration: none;
+    border-radius: var(--gympat-border-radius);
+    font-weight: 600;
+    transition: var(--gympat-transition);
+}
+
+#gympat-pdf-link a:hover {
+    background: #1a252f;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+#gympat-pdf-link a::before {
+    content: "📄 ";
+    margin-right: 8px;
+}
+
+/* Load saved patterns dropdown */
+#gympat-load-pattern {
+    min-width: 200px;
+    padding: 8px 12px;
+    border: 1px solid var(--gympat-border);
+    border-radius: var(--gympat-border-radius);
+    background: #fff;
+    font-size: 1em;
+}
+
+/* Tooltips (optional, can be enhanced with JS) */
+.gympat-tooltip {
+    position: relative;
+    display: inline-block;
+    margin-left: 5px;
+    cursor: help;
+    color: var(--gympat-secondary);
+}
+
+.gympat-tooltip::after {
+    content: "?";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: var(--gympat-border);
+    color: var(--gympat-text);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 16px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.gympat-tooltip:hover::before {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--gympat-primary);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: var(--gympat-border-radius);
+    font-size: 0.8em;
+    white-space: nowrap;
+    z-index: 10;
+    margin-bottom: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* My Patterns Table */
+.gympat-my-patterns table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background: rgba(0,0,0,0.6);
+    box-shadow: var(--gympat-box-shadow);
+    border-radius: var(--gympat-border-radius);
+    overflow: hidden;
+}
+
+.gympat-my-patterns th {
+    background: var(--gympat-primary);
+    color: #fff;
+    padding: 12px 15px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.gympat-my-patterns td {
+    padding: 12px 15px;
+    border-bottom: 1px solid var(--gympat-border);
+    color: #fff
+}
+
+.gympat-my-patterns tr:last-child td {
+    border-bottom: none;
+}
+
+.gympat-my-patterns tr:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.gympat-my-patterns .gympat-actions-cell {
+    white-space: nowrap;
+}
+
+.gympat-my-patterns .gympat-actions-cell a,
+.gympat-my-patterns .gympat-actions-cell button {
+    margin-right: 8px;
+    padding: 5px 10px;
+    font-size: 0.9em;
+    background: var(--gympat-bg-light);
+    color: var(--gympat-text);
+    border: 1px solid var(--gympat-border);
+    border-radius: var(--gympat-border-radius);
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.gympat-my-patterns .gympat-actions-cell button:hover {
+    background: var(--gympat-border);
+}
+
+/* Search input */
+#gympat-search {
+    width: 100%;
+    max-width: 100%;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    border: 1px solid var(--gympat-border);
+    border-radius: 30px;
+    font-size: 1em;
+    background: var(--gympat-bg-light) url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="%23666" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>') no-repeat 15px center;
+    padding-left: 45px;
+    background-size: 18px;
+}
+
+#gympat-search:focus {
+    outline: none;
+    border-color: var(--gympat-secondary);
+    background-color: #fff;
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.1);
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 782px) {
+    .gympat-form-container,
+    .gympat-my-patterns {
+        padding: 15px;
+    }
+
+    .gympat-grid-3 {
+        grid-template-columns: 1fr;
+    }
+
+    .gympat-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .gympat-actions button,
+    .gympat-actions .button,
+    #gympat-load-pattern {
+        width: 100%;
+        text-align: center;
+    }
+
+    .gympat-my-patterns table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .gympat-my-patterns th,
+    .gympat-my-patterns td {
+        padding: 10px;
+    }
+
+    .gympat-my-patterns .gympat-actions-cell a,
+    .gympat-my-patterns .gympat-actions-cell button {
+        padding: 8px 12px;
+        font-size: 1em;
+    }
+}
+
+/* Utility classes */
+.gympat-text-center { text-align: center; }
+.gympat-mb-20 { margin-bottom: 20px; }
+.gympat-mt-20 { margin-top: 20px; }
+.gympat-hidden { display: none !important; }
+
+/* Error and success messages */
+.gympat-message {
+    padding: 12px 20px;
+    margin: 15px 0;
+    border-radius: var(--gympat-border-radius);
+    border-left: 4px solid;
+}
+
+.gympat-message-success {
+    background: #e8f5e9;
+    border-color: var(--gympat-success);
+    color: #1e4620;
+}
+
+.gympat-message-error {
+    background: #ffebee;
+    border-color: var(--gympat-error);
+    color: #621b16;
+}
+
+/* Spinner (for AJAX) */
+.gympat-spinner {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(0,0,0,0.1);
+    border-radius: 50%;
+    border-top-color: var(--gympat-secondary);
+    animation: gympat-spin 1s ease-in-out infinite;
+}
+
+@keyframes gympat-spin {
+    to { transform: rotate(360deg); }
+}
