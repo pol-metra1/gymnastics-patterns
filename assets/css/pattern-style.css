@@ -15,12 +15,73 @@
     --gympat-success: #27ae60;
     --gympat-error: #c0392b;
     --gympat-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-    --gympat-border-radius: 4px;
-    --gympat-box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    --gympat-border-radius: 6px;
+    --gympat-box-shadow: 0 5px 10px rgba(0,0,0,0.05);
     --gympat-transition: all 0.2s ease;
 }
 
-/* Container */
+.a:active,
+.a:hover{
+  text-decoration: none;
+  color: #fff;
+}
+ 
+.a {
+  text-decoration: none;
+}
+
+.bt {
+	display: inline-block;	
+	border: 1px solid #fff; 
+	border-radius: 6px;
+	padding-top: 0.3em;
+	height: 40px;
+        width: 100px;
+	top: 4em;
+	left: 2em;
+	font-size: 1em;
+	font-weight: 600;
+	text-decoration: none;
+        text-align: center;
+	vertical-align: middle;
+	color: #333;
+	background-color: #2aaed5;
+	cursor: pointer;
+        z-index: 99999;
+ 	position: fixed;  
+}
+
+.bt:hover {
+        color: #fff;
+}
+
+.btnew {
+        display: inline-block;  
+        border: 1px solid #fff; 
+        border-radius: 6px;
+        padding-top: 0.3em;
+        height: 40px;
+        width: 300px;
+	top: 3em;
+	right: 2em;
+        font-size: 1em;
+        font-weight: 600;
+        text-decoration: none;
+        text-align: center;
+        vertical-align: middle;
+        color: #333;
+        background-color: #2aaed5;
+        cursor: pointer;
+        z-index: 99999;
+        position: fixed;  
+}
+
+.btnew:hover {
+        color: #fff;
+}
+
+
+/*container */
 .gympat-form-container,
 .gympat-my-patterns {
     font-family: var(--gympat-font-family);
@@ -28,7 +89,7 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    background: #fff;
+    background: transparent;
     border-radius: 8px;
     box-shadow: var(--gympat-box-shadow);
     box-sizing: border-box;
@@ -37,8 +98,9 @@
 /* Headings */
 .gympat-form-container h2,
 .gympat-my-patterns h2 {
-    color: var(--gympat-primary);
-    font-size: 1.5em;
+    color: #ffffff;
+    font-size: 2em;
+    text-align: center;
     margin: 1.5em 0 1em;
     padding-bottom: 0.5em;
     border-bottom: 2px solid var(--gympat-border);
@@ -48,9 +110,14 @@
     margin-top: 0;
 }
 
+.legend {
+    font-size: 3em;
+    text-align: center;
+}
+
 /* Form rows and grids */
 .gympat-row {
-    display: flex;
+    display: block;
     flex-wrap: wrap;
     gap: 20px;
     margin-bottom: 20px;
@@ -62,7 +129,6 @@
 
 /* Grid for measurements (3 columns on desktop) */
 .gympat-grid-3 {
-    display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 15px 20px;
     margin-bottom: 20px;
@@ -74,8 +140,8 @@
     display: block;
     font-weight: 600;
     margin-bottom: 5px;
-    color: var(--gympat-primary);
-    font-size: 0.9em;
+    color: #FFF;
+    font-size: 1em;
 }
 
 .gympat-form-container input[type="text"],
@@ -84,12 +150,12 @@
 .gympat-form-container textarea {
     width: 100%;
     padding: 8px 12px;
-    border: 1px solid var(--gympat-border);
+    border: 3px solid var(--gympat-border);
     border-radius: var(--gympat-border-radius);
     font-size: 1em;
     transition: var(--gympat-transition);
     box-sizing: border-box;
-    background-color: #fff;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .gympat-form-container input:focus,
@@ -98,6 +164,7 @@
     outline: none;
     border-color: var(--gympat-secondary);
     box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .gympat-form-container input:invalid {
@@ -115,7 +182,7 @@
 #gympat-skirt-options {
     margin-top: 20px;
     padding: 20px;
-    background: var(--gympat-bg-light);
+    background: transparent;
     border-radius: var(--gympat-border-radius);
     border-left: 4px solid var(--gympat-secondary);
     transition: var(--gympat-transition);
@@ -291,7 +358,7 @@
     width: 100%;
     border-collapse: collapse;
     margin: 20px 0;
-    background: #fff;
+    background: rgba(0,0,0,0.6);
     box-shadow: var(--gympat-box-shadow);
     border-radius: var(--gympat-border-radius);
     overflow: hidden;
@@ -301,13 +368,14 @@
     background: var(--gympat-primary);
     color: #fff;
     padding: 12px 15px;
-    text-align: left;
+    text-align: center;
     font-weight: 600;
 }
 
 .gympat-my-patterns td {
     padding: 12px 15px;
     border-bottom: 1px solid var(--gympat-border);
+    color: #fff
 }
 
 .gympat-my-patterns tr:last-child td {
@@ -315,7 +383,7 @@
 }
 
 .gympat-my-patterns tr:hover {
-    background: var(--gympat-bg-light);
+    background: rgba(255, 255, 255, 0.3);
 }
 
 .gympat-my-patterns .gympat-actions-cell {
@@ -343,7 +411,7 @@
 /* Search input */
 #gympat-search {
     width: 100%;
-    max-width: 400px;
+    max-width: 100%;
     padding: 10px 15px;
     margin-bottom: 20px;
     border: 1px solid var(--gympat-border);
